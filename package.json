@@ -1,6 +1,6 @@
 {
-  "name": "@heruka_urgyen/react-playing-cards",
-  "version": "0.5.0",
+  "name": "@DerrickAfrifa/react-playing-cards",
+  "version": "1.0.0",
   "description": "SVG playing cards as a react component",
   "main": "lib/index.js",
   "scripts": {
@@ -8,10 +8,10 @@
     "build-example": "cd example && npx webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "github.com/heruka-urgyen",
+  "author": "github.com/DerrickAfrifa",
   "repository": {
     "type": "git",
-    "url": "https://github.com/heruka-urgyen/react-playing-cards"
+    "url": "https://github.com/DerrickAfrifa/react-playing-cards"
   },
   "license": "MIT",
   "peerDependencies": {
