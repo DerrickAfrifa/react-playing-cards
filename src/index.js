@@ -5,19 +5,19 @@ import TcB from "./components/TcB"
 import FcN from "./components/FcN"
 import FcB from "./components/FcB"
 
-const selectDeck = deckType => {
+const selectDeck = (deckType, ref) => {
   if (deckType === "big-face") {return TcB}
-  if (deckType === "big-face four-color") {return FcB}
+  if (deckType === "big-face four-color") {return <FcB ref={ref} />}
   if (deckType === "four-color") {return FcN}
 
   return TcN
 }
 
-function Card(props) {
+const Card = React.forwardRef((props, ref) => {
   const {deckType} = props
-  const Component = selectDeck(deckType)
+  const Component = selectDeck(deckType, ref)
 
-  return <Component {...props} />
-}
+  return <Component ref={ref} {...props} />
+})
 
 export default Card

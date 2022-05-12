@@ -117,10 +117,10 @@ const cards = {
   'As': fcbfAs,
 }
 
-function FcB(props) {
+const FcB = React.forwardRef((props, ref) => {
   return (
-    <Card {...props} card={cards[props.card]} />
+    <Card ref={ref} {...props} card={cards[props.card]} />
   )
-}
+})
 
 export default FcB
