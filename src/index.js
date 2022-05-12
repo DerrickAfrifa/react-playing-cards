@@ -14,6 +14,7 @@ const selectDeck = (deckType, ref) => {
 }
 
 const Card = React.forwardRef((props, ref) => {
+  console.log('ref in lib index', ref)
   const {deckType} = props
   const Component = selectDeck(deckType, ref)
 
