@@ -119,7 +119,7 @@ const cards = {
 
 const FcB = React.forwardRef((props, ref) => {
   return (
-    <Card ref={ref} {...props} card={cards[props.card]} />
+    <Card ref={props.refs} {...props} card={cards[props.card]} />
   )
 })
 

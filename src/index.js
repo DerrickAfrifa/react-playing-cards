@@ -7,7 +7,7 @@ import FcB from "./components/FcB"
 
 const selectDeck = (deckType, ref) => {
   if (deckType === "big-face") {return TcB}
-  if (deckType === "big-face four-color") {return <FcB ref={ref} />}
+  if (deckType === "big-face four-color") {return <FcB refs={ref} />}
   if (deckType === "four-color") {return FcN}
 
   return TcN
